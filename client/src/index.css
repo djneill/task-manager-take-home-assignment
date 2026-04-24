@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root {
+  --regal-navy: #134074ff;
+  --oxford-navy: #13315cff;
+  --prussian-blue: #0b2545ff;
+  --powder-blue: #8da9c4ff;
+  --mint-cream: #eef4edff;
+}
+
+body {
+  background-color: var(--prussian-blue);
+  color: var(--mint-cream);
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
