@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import type { Task } from "../types/task";
 
-const API = "http://localhost:3001/api/tasks";
+const API_BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3001'
+const API = `${API_BASE}/api/tasks`
 
 export function useTasks() {
   const [tasks, setTasks] = useState<Task[]>([]);
